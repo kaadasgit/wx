@@ -1,0 +1,23 @@
+server:
+  port: 8201
+
+#打印测试sql语句
+logging:
+  path: /data/logs/wx
+  file: /data/logs/wx/log
+  level:
+      com:
+        pctx:
+          bibacrmcore: debug
+
+wxmini:
+  appid: wx70533d050a179ece
+  secret: 0f5fe5f463691dbcc92293c6c3086ecf
+  jscode2SessionURL: https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code
+  accessTokenURL: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s
+
+
+wxmp:
+  appid: wx6391f213189e3c9c
+  secret: 2bc647bc7253270e559e8bc6b4b1a13a
+  redirectUri: http://www.chason678.cn/wxmpCrossing/chason/wxMp/auth_userinfo
